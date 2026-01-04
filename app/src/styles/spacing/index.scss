@@ -1,0 +1,15 @@
+@use 'width';
+@use 'height';
+@use 'margin';
+@use 'padding';
+@use 'gap';
+
+.content-limit {
+	max-width: 1440px;
+}
+
+@media (max-width: 1440px) {
+	.content-limit {
+		max-width: 1150px;
+	}
+}

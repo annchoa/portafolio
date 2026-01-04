@@ -1,0 +1,481 @@
+$spacingValue: 0.25;
+
+.pb-0 {
+	padding-bottom: 0;
+}
+.pt-0 {
+	padding-top: 0;
+}
+.pl-0 {
+	padding-left: 0;
+}
+.pr-0 {
+	padding-right: 0;
+}
+.px-0 {
+	padding-left: 0;
+	padding-right: 0;
+}
+.py-0 {
+	padding-bottom: 0;
+	padding-top: 0;
+}
+.pa-0 {
+	padding: 0;
+}
+
+.pb-1 {
+	padding-bottom: $spacingValue * 1rem;
+}
+.pt-1 {
+	padding-top: $spacingValue * 1rem;
+}
+.pl-1 {
+	padding-left: $spacingValue * 1rem;
+}
+.pr-1 {
+	padding-right: $spacingValue * 1rem;
+}
+.px-1 {
+	padding-left: $spacingValue * 1rem;
+	padding-right: $spacingValue * 1rem;
+}
+.py-1 {
+	padding-bottom: $spacingValue * 1rem;
+	padding-top: $spacingValue * 1rem;
+}
+.pa-1 {
+	padding: $spacingValue * 1rem;
+}
+
+.pb-2 {
+	padding-bottom: $spacingValue * 2rem;
+}
+.pt-2 {
+	padding-top: $spacingValue * 2rem;
+}
+.pl-2 {
+	padding-left: $spacingValue * 2rem;
+}
+.pr-2 {
+	padding-right: $spacingValue * 2rem;
+}
+.px-2 {
+	padding-left: $spacingValue * 2rem;
+	padding-right: $spacingValue * 2rem;
+}
+.py-2 {
+	padding-bottom: $spacingValue * 2rem;
+	padding-top: $spacingValue * 2rem;
+}
+.pa-2 {
+	padding: $spacingValue * 2rem;
+}
+
+.pb-3 {
+	padding-bottom: $spacingValue * 3rem;
+}
+.pt-3 {
+	padding-top: $spacingValue * 3rem;
+}
+.pl-3 {
+	padding-left: $spacingValue * 3rem;
+}
+.pr-3 {
+	padding-right: $spacingValue * 3rem;
+}
+.px-3 {
+	padding-left: $spacingValue * 3rem;
+	padding-right: $spacingValue * 3rem;
+}
+.py-3 {
+	padding-bottom: $spacingValue * 3rem;
+	padding-top: $spacingValue * 3rem;
+}
+.pa-3 {
+	padding: $spacingValue * 3rem;
+}
+
+.pb-4 {
+	padding-bottom: $spacingValue * 4rem;
+}
+.pt-4 {
+	padding-top: $spacingValue * 4rem;
+}
+.pl-4 {
+	padding-left: $spacingValue * 4rem;
+}
+.pr-4 {
+	padding-right: $spacingValue * 4rem;
+}
+.px-4 {
+	padding-left: $spacingValue * 4rem;
+	padding-right: $spacingValue * 4rem;
+}
+.py-4 {
+	padding-bottom: $spacingValue * 4rem;
+	padding-top: $spacingValue * 4rem;
+}
+.pa-4 {
+	padding: $spacingValue * 4rem;
+}
+
+.pb-5 {
+	padding-bottom: $spacingValue * 5rem;
+}
+.pt-5 {
+	padding-top: $spacingValue * 5rem;
+}
+.pl-5 {
+	padding-left: $spacingValue * 5rem;
+}
+.pr-5 {
+	padding-right: $spacingValue * 5rem;
+}
+.px-5 {
+	padding-left: $spacingValue * 5rem;
+	padding-right: $spacingValue * 5rem;
+}
+.py-5 {
+	padding-bottom: $spacingValue * 5rem;
+	padding-top: $spacingValue * 5rem;
+}
+.pa-5 {
+	padding: $spacingValue * 5rem;
+}
+
+.pb-6 {
+	padding-bottom: $spacingValue * 6rem;
+}
+.pt-6 {
+	padding-top: $spacingValue * 6rem;
+}
+.pl-6 {
+	padding-left: $spacingValue * 6rem;
+}
+.pr-6 {
+	padding-right: $spacingValue * 6rem;
+}
+.px-6 {
+	padding-left: $spacingValue * 6rem;
+	padding-right: $spacingValue * 6rem;
+}
+.py-6 {
+	padding-bottom: $spacingValue * 6rem;
+	padding-top: $spacingValue * 6rem;
+}
+.pa-6 {
+	padding: $spacingValue * 6rem;
+}
+
+.pb-8 {
+	padding-bottom: $spacingValue * 8rem;
+}
+.pt-8 {
+	padding-top: $spacingValue * 8rem;
+}
+.pl-8 {
+	padding-left: $spacingValue * 8rem;
+}
+.pr-8 {
+	padding-right: $spacingValue * 8rem;
+}
+.px-8 {
+	padding-left: $spacingValue * 8rem;
+	padding-right: $spacingValue * 8rem;
+}
+.py-8 {
+	padding-bottom: $spacingValue * 8rem;
+	padding-top: $spacingValue * 8rem;
+}
+.pa-8 {
+	padding: $spacingValue * 8rem;
+}
+
+.pb-10 {
+	padding-bottom: $spacingValue * 10rem;
+}
+.pt-10 {
+	padding-top: $spacingValue * 10rem;
+}
+.pl-10 {
+	padding-left: $spacingValue * 10rem;
+}
+.pr-10 {
+	padding-right: $spacingValue * 10rem;
+}
+.px-10 {
+	padding-left: $spacingValue * 10rem;
+	padding-right: $spacingValue * 10rem;
+}
+.py-10 {
+	padding-bottom: $spacingValue * 10rem;
+	padding-top: $spacingValue * 10rem;
+}
+.pa-10 {
+	padding: $spacingValue * 10rem;
+}
+
+.pb-12 {
+	padding-bottom: $spacingValue * 12rem;
+}
+.pt-12 {
+	padding-top: $spacingValue * 12rem;
+}
+.pl-12 {
+	padding-left: $spacingValue * 12rem;
+}
+.pr-12 {
+	padding-right: $spacingValue * 12rem;
+}
+.px-12 {
+	padding-left: $spacingValue * 12rem;
+	padding-right: $spacingValue * 12rem;
+}
+.py-12 {
+	padding-bottom: $spacingValue * 12rem;
+	padding-top: $spacingValue * 12rem;
+}
+.pa-12 {
+	padding: $spacingValue * 12rem;
+}
+
+.pb-14 {
+	padding-bottom: $spacingValue * 14rem;
+}
+.pt-14 {
+	padding-top: $spacingValue * 14rem;
+}
+.pl-14 {
+	padding-left: $spacingValue * 14rem;
+}
+.pr-14 {
+	padding-right: $spacingValue * 14rem;
+}
+.px-14 {
+	padding-left: $spacingValue * 14rem;
+	padding-right: $spacingValue * 14rem;
+}
+.py-14 {
+	padding-bottom: $spacingValue * 14rem;
+	padding-top: $spacingValue * 14rem;
+}
+.pa-14 {
+	padding: $spacingValue * 14rem;
+}
+
+.pb-16 {
+	padding-bottom: $spacingValue * 16rem;
+}
+.pt-16 {
+	padding-top: $spacingValue * 16rem;
+}
+.pl-16 {
+	padding-left: $spacingValue * 16rem;
+}
+.pr-16 {
+	padding-right: $spacingValue * 16rem;
+}
+.px-16 {
+	padding-left: $spacingValue * 16rem;
+	padding-right: $spacingValue * 16rem;
+}
+.py-16 {
+	padding-bottom: $spacingValue * 16rem;
+	padding-top: $spacingValue * 16rem;
+}
+.pa-16 {
+	padding: $spacingValue * 16rem;
+}
+
+.pb-20 {
+	padding-bottom: $spacingValue * 20rem;
+}
+.pt-20 {
+	padding-top: $spacingValue * 20rem;
+}
+.pl-20 {
+	padding-left: $spacingValue * 20rem;
+}
+.pr-20 {
+	padding-right: $spacingValue * 20rem;
+}
+.px-20 {
+	padding-left: $spacingValue * 20rem;
+	padding-right: $spacingValue * 20rem;
+}
+.py-20 {
+	padding-bottom: $spacingValue * 20rem;
+	padding-top: $spacingValue * 20rem;
+}
+.pa-20 {
+	padding: $spacingValue * 20rem;
+}
+
+.pb-24 {
+	padding-bottom: $spacingValue * 24rem;
+}
+.pt-24 {
+	padding-top: $spacingValue * 24rem;
+}
+.pl-24 {
+	padding-left: $spacingValue * 24rem;
+}
+.pr-24 {
+	padding-right: $spacingValue * 24rem;
+}
+.px-24 {
+	padding-left: $spacingValue * 24rem;
+	padding-right: $spacingValue * 24rem;
+}
+.py-24 {
+	padding-bottom: $spacingValue * 24rem;
+	padding-top: $spacingValue * 24rem;
+}
+.pa-24 {
+	padding: $spacingValue * 24rem;
+}
+
+.pb-28 {
+	padding-bottom: $spacingValue * 28rem;
+}
+.pt-28 {
+	padding-top: $spacingValue * 28rem;
+}
+.pl-28 {
+	padding-left: $spacingValue * 28rem;
+}
+.pr-28 {
+	padding-right: $spacingValue * 28rem;
+}
+.px-28 {
+	padding-left: $spacingValue * 28rem;
+	padding-right: $spacingValue * 28rem;
+}
+.py-28 {
+	padding-bottom: $spacingValue * 28rem;
+	padding-top: $spacingValue * 28rem;
+}
+.pa-28 {
+	padding: $spacingValue * 28rem;
+}
+
+.pb-32 {
+	padding-bottom: $spacingValue * 32rem;
+}
+.pt-32 {
+	padding-top: $spacingValue * 32rem;
+}
+.pl-32 {
+	padding-left: $spacingValue * 32rem;
+}
+.pr-32 {
+	padding-right: $spacingValue * 32rem;
+}
+.px-32 {
+	padding-left: $spacingValue * 32rem;
+	padding-right: $spacingValue * 32rem;
+}
+.py-32 {
+	padding-bottom: $spacingValue * 32rem;
+	padding-top: $spacingValue * 32rem;
+}
+.pa-32 {
+	padding: $spacingValue * 32rem;
+}
+
+.pb-40 {
+	padding-bottom: $spacingValue * 40rem;
+}
+.pt-40 {
+	padding-top: $spacingValue * 40rem;
+}
+.pl-40 {
+	padding-left: $spacingValue * 40rem;
+}
+.pr-40 {
+	padding-right: $spacingValue * 40rem;
+}
+.px-40 {
+	padding-left: $spacingValue * 40rem;
+	padding-right: $spacingValue * 40rem;
+}
+.py-40 {
+	padding-bottom: $spacingValue * 40rem;
+	padding-top: $spacingValue * 40rem;
+}
+.pa-40 {
+	padding: $spacingValue * 40rem;
+}
+
+.pb-48 {
+	padding-bottom: $spacingValue * 48rem;
+}
+.pt-48 {
+	padding-top: $spacingValue * 48rem;
+}
+.pl-48 {
+	padding-left: $spacingValue * 48rem;
+}
+.pr-48 {
+	padding-right: $spacingValue * 48rem;
+}
+.px-48 {
+	padding-left: $spacingValue * 48rem;
+	padding-right: $spacingValue * 48rem;
+}
+.py-48 {
+	padding-bottom: $spacingValue * 48rem;
+	padding-top: $spacingValue * 48rem;
+}
+.pa-48 {
+	padding: $spacingValue * 48rem;
+}
+
+.pb-56 {
+	padding-bottom: $spacingValue * 56rem;
+}
+.pt-56 {
+	padding-top: $spacingValue * 56rem;
+}
+.pl-56 {
+	padding-left: $spacingValue * 56rem;
+}
+.pr-56 {
+	padding-right: $spacingValue * 56rem;
+}
+.px-56 {
+	padding-left: $spacingValue * 56rem;
+	padding-right: $spacingValue * 56rem;
+}
+.py-56 {
+	padding-bottom: $spacingValue * 56rem;
+	padding-top: $spacingValue * 56rem;
+}
+.pa-56 {
+	padding: $spacingValue * 56rem;
+}
+
+.pb-64 {
+	padding-bottom: $spacingValue * 64rem;
+}
+.pt-64 {
+	padding-top: $spacingValue * 64rem;
+}
+.pl-64 {
+	padding-left: $spacingValue * 64rem;
+}
+.pr-64 {
+	padding-right: $spacingValue * 64rem;
+}
+.px-64 {
+	padding-left: $spacingValue * 64rem;
+	padding-right: $spacingValue * 64rem;
+}
+.py-64 {
+	padding-bottom: $spacingValue * 64rem;
+	padding-top: $spacingValue * 64rem;
+}
+.pa-64 {
+	padding: $spacingValue * 64rem;
+}

@@ -1,0 +1,70 @@
+$spacingValue: 0.25;
+
+.gap-0 {
+	gap: 0;
+}
+.gap-1 {
+	gap: $spacingValue * 1rem;
+}
+.gap-2 {
+	gap: $spacingValue * 2rem;
+}
+
+.gap-3 {
+	gap: $spacingValue * 3rem;
+}
+
+.gap-4 {
+	gap: $spacingValue * 4rem;
+}
+
+.gap-5 {
+	gap: $spacingValue * 5rem;
+}
+
+.gap-6 {
+	gap: $spacingValue * 6rem;
+}
+
+.gap-8 {
+	gap: $spacingValue * 8rem;
+}
+
+.gap-10 {
+	gap: $spacingValue * 10rem;
+}
+
+.gap-12 {
+	gap: $spacingValue * 12rem;
+}
+
+.gap-16 {
+	gap: $spacingValue * 16rem;
+}
+
+.gap-20 {
+	gap: $spacingValue * 20rem;
+}
+
+.gap-24 {
+	gap: $spacingValue * 24rem;
+}
+
+.gap-32 {
+	gap: $spacingValue * 32rem;
+}
+
+.gap-40 {
+	gap: $spacingValue * 40rem;
+}
+
+.gap-48 {
+	gap: $spacingValue * 48rem;
+}
+.gap-56 {
+	gap: $spacingValue * 56rem;
+}
+
+.gap-64 {
+	gap: $spacingValue * 64rem;
+}
