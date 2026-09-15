@@ -6,7 +6,7 @@ export interface Project {
   /** Dos columnas de copy por proyecto */
   paragraphs: [string, string];
   /** Dos huecos de imagen; `true` = sobre tarjeta blanca, `false` = a pelo sobre el navy */
-  shots: [ProjectShot, ProjectShot];
+  shots: ProjectShot[];
 }
 
 export interface ProjectShot {
