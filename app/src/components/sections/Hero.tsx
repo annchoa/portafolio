@@ -13,9 +13,8 @@ export function Hero() {
         <h1 className={styles.name}>{copy.name}</h1>
         <p className={styles.role}>{copy.role}</p>
 
-        <LanguageSwitch />
-
         <p className={styles.bio}>{copy.bio}</p>
+        <LanguageSwitch />
       </div>
     </header>
   );

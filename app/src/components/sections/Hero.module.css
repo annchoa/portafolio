@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  padding-top: clamp(80px, 12vw, 176px);
+  padding-top: clamp(70px, 11vw, 170px);
   padding-bottom: clamp(48px, 8vw, 120px);
   overflow: hidden;
   text-align: center;
@@ -22,6 +22,7 @@
   z-index: 1;
   padding-top: clamp(140px, 26vw, 384px);
   display: flex;
+  gap: 25px;
   flex-direction: column;
   align-items: center;
 }
@@ -47,7 +48,7 @@
 }
 
 .bio {
-  margin-top: clamp(80px, 16vw, 240px);
+  margin-top: clamp(80px, 16vw, 140px);
   max-width: 731px;
   font-family: var(--body-font);
   font-size: var(--body-size);

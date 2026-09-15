@@ -13,10 +13,9 @@
 }
 
 .stat {
-  margin-top: calc(-1 * var(--block-spacing));
   margin-inline-start: auto;
   width: min(259px, 100%);
-  margin-inline-end: clamp(16px, 6.6vw, 95px);
+  margin-inline-end: clamp(16px, 6.6vw, 70px);
   text-align: center;
   color: var(--stat-color);
 }
@@ -34,7 +33,6 @@
 }
 
 .elevation {
-  margin-top: var(--space-2);
   font-family: var(--stat-value-font);
   font-size: var(--stat-value-size);
   line-height: var(--title-line-height);

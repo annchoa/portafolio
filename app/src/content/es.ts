@@ -1,9 +1,5 @@
 import type { Copy } from '@/types/content';
 
-/**
- * El frame original trae Lorem Ipsum en todos los párrafos de proyecto y
- * experiencia. Se reproduce tal cual en lugar de inventar copy.
- */
 const PLACEHOLDER =
   'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London.';
 
@@ -12,10 +8,10 @@ export const es: Copy = {
   role: 'PRODUCT ENGINEER',
   bio: 'Nací entre volcanes, a 2,754 m sobre el nivel del mar. Estudié periodismo y hace 8 años cambié de profesión y país. Estudié en España un Master en Gestión de la Información y empecé a programar con una escuela autogestionada en Valencia, la Devescola. Hace 6 años he desarrollado software para ClimateTrade, QueryLayer y Passporter. Defensora de las metodologías ágiles y el Lean UX, investigo de forma autónoma por la integración del diseño en plataformas web.',
   sections: {
-    projects: 'PROJECTS',
-    experience: 'EXPERIENCE',
-    community: 'COMMUNITY &\nRECOGNITION',
-    contact: 'contact me',
+    projects: 'PROYECTOS',
+    experience: 'EXPERIENCIA',
+    community: 'LOGROS',
+    contact: 'contáctame',
   },
   projects: [
     {
@@ -46,8 +42,8 @@ export const es: Copy = {
   ],
   links: [
     { label: 'linkedin.com/in/annchoa', href: 'https://linkedin.com/in/annchoa' },
-    { label: 'https://github.com/annchoa', href: 'https://github.com/annchoa' },
-    { label: 'https://gitlab.com/annchoa/', href: 'https://gitlab.com/annchoa/' },
+    { label: 'github.com/annchoa', href: 'https://github.com/annchoa' },
+    { label: 'gitlab.com/annchoa', href: 'https://gitlab.com/annchoa/' },
   ],
   footer: {
     place: 'chimborazo',
