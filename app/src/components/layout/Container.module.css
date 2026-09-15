@@ -1,11 +1,17 @@
-/* Columna de contenido: respeta el gutter izquierdo del sistema (148px) */
+/* Columna de contenido: acotada a la anchura del diseño y centrada,
+   con el gutter del sistema (148px) por dentro. */
 .container {
   position: relative;
   z-index: 1;
+  width: 100%;
+  max-width: var(--page-max-width);
+  margin-inline: auto;
   padding-inline: var(--page-gutter);
 }
 
-/* Los títulos de display ignoran el gutter y arrancan en x: 0 */
+/* Los títulos de display ignoran el gutter y el ancho máximo:
+   arrancan en el borde de la pantalla y desbordan a propósito. */
 .bleed {
+  max-width: none;
   padding-inline: 0;
 }

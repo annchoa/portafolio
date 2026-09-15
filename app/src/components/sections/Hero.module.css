@@ -6,13 +6,12 @@
   text-align: center;
 }
 
-/* Banda verde dibujada a mano, detrás del nombre */
 .scribble {
-  position: absolute;
-  inset-inline-start: -20px;
-  top: clamp(80px, 12vw, 176px);
-  width: 103%;
+  display: block;
+  width: 104%;
   max-width: none;
+  margin-inline-start: -2%;
+  height: auto;
   pointer-events: none;
   user-select: none;
 }
@@ -20,7 +19,7 @@
 .content {
   position: relative;
   z-index: 1;
-  padding-top: clamp(140px, 26vw, 384px);
+  padding-top: clamp(0px, 1vw, 16px);
   display: flex;
   gap: 25px;
   flex-direction: column;

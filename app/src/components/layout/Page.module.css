@@ -1,9 +1,10 @@
-/* El lienzo: un único color de fondo de borde a borde */
+/* El lienzo: un único color de fondo de borde a borde, a sangre completa.
+   No se acota aquí — si se limita el ancho del lienzo, la decoración
+   (bleed blocks, banda verde, contorno del Chimborazo) deja de tocar
+   el borde de la pantalla. El ancho máximo lo pone Container. */
 .page {
   position: relative;
   width: 100%;
-  max-width: var(--page-max-width);
-  margin-inline: auto;
   background-color: var(--background-color);
-  overflow: hidden;
+  overflow: hidden; /* el recorte de lo que desborda es intencionado */
 }
