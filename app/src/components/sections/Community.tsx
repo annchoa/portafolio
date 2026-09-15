@@ -10,7 +10,8 @@ export function Community() {
 
   return (
     <Section id="community" labelledBy="community-heading">
-      <BleedBlock color="var(--community-color)" left={-80} top={600} width={305} height={179} />
+
+      <BleedBlock color="var(--community-color)" left={-20} top={400} width={305} height={179} />
 
       <Container bleed>
         <DisplayHeading id="community-heading" color="var(--community-color)" size="alt">

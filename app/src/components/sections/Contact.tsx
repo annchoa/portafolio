@@ -1,6 +1,7 @@
 import styles from '@/components/sections/Contact.module.css';
 import { Section } from '@/components/layout/Section';
 import { Container } from '@/components/layout/Container';
+import { asset } from '@/lib/asset';
 import { useLanguage } from '@/hooks/useLanguage';
 
 export function Contact() {
@@ -23,6 +24,12 @@ export function Contact() {
                 target="_blank"
                 rel="noreferrer noopener"
               >
+                <img
+                  className={[styles.icon, styles[link.icon]].filter(Boolean).join(' ')}
+                  src={asset(`assets/${link.icon}.png`)}
+                  alt=""
+                  aria-hidden="true"
+                />
                 {link.label}
               </a>
             ))}

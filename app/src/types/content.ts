@@ -19,7 +19,11 @@ export interface ExperienceEntry {
   paragraphs: [string, string];
 }
 
+export type ContactIcon = 'linkedin' | 'github' | 'gitlab';
+
 export interface ContactLink {
+  /** Identifica la marca: elige el icono y sus ajustes de color */
+  icon: ContactIcon;
   /** Las URLs se muestran en crudo, sin acortar (regla del design system) */
   label: string;
   href: string;

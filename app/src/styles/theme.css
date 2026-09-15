@@ -77,6 +77,10 @@
   --body-line-height: var(--leading-body);
   --body-color: var(--text-color);
 
+  /* Iconos de contacto */
+  --contact-icon-size: 0.9em;
+  --contact-icon-gap: 0.5em;
+
   /* UI (pills de idioma) */
   --ui-font: var(--font-family-ui);
   --ui-size: 16px;

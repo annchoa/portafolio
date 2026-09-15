@@ -43,9 +43,9 @@ export const en: Copy = {
     'Ambassador — Women in Data Science (WiDS) at Stanford University (2019–2020) and WiDS Worldwide (2021–2022)',
   ],
   links: [
-    { label: 'linkedin.com/in/annchoa', href: 'https://linkedin.com/in/annchoa' },
-    { label: 'github.com/annchoa', href: 'https://github.com/annchoa' },
-    { label: 'gitlab.com/annchoa/', href: 'https://gitlab.com/annchoa/' },
+    { icon: 'linkedin', label: 'linkedin.com/in/annchoa', href: 'https://linkedin.com/in/annchoa' },
+    { icon: 'github', label: 'github.com/annchoa', href: 'https://github.com/annchoa' },
+    { icon: 'gitlab', label: 'gitlab.com/annchoa/', href: 'https://gitlab.com/annchoa/' },
   ],
   footer: {
     place: 'chimborazo',

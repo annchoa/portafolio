@@ -11,7 +11,7 @@ export function Experience() {
 
   return (
     <Section id="experience" labelledBy="experience-heading">
-      <BleedBlock color="var(--experience-color)" right={-44} top={300} width={87} height={379} />
+      <BleedBlock color="var(--experience-color)" right={-24} top={450} width={87} height={300} />
 
       <Container bleed>
         <div className={styles.heading}>

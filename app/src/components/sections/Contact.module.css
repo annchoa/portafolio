@@ -13,18 +13,40 @@
   transform: rotate(-0.63deg);
 }
 
+/* Sin anchura fija: la columna se ajusta al enlace más largo y queda
+   centrada, sin espacio sobrante a la derecha. */
 .links {
   margin-top: var(--stack-spacing);
   display: flex;
   flex-direction: column;
-  width: min(405px, 100%);
+  gap: var(--space-1);
   font-family: var(--label-font);
   font-size: var(--label-size);
   line-height: var(--title-line-height);
 }
 
-/* Las URLs se imprimen en crudo, como bloque de texto plano */
+/* Las URLs se imprimen en crudo, como bloque de texto plano.
+   `fit-content` hace que la caja del enlace termine donde termina el
+   texto: sin él, el <a> ocupa todo el ancho de la columna. */
 .link {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: var(--contact-icon-gap);
   color: var(--label-color);
   word-break: break-word;
+}
+
+.icon {
+  width: var(--contact-icon-size);
+  height: var(--contact-icon-size);
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* El logo de GitHub es negro sobre transparente y sobre el navy quedaría
+   ilegible: se invierte a blanco, que es la versión de marca para fondos
+   oscuros y además concuerda con el resto de la página. */
+.github {
+  filter: invert(1);
 }
