@@ -1,0 +1,41 @@
+.footer {
+  position: relative;
+  margin-top: var(--section-spacing);
+  padding-bottom: var(--block-spacing);
+  overflow: hidden;
+}
+
+/* Contorno de una línea del Chimborazo: la firma de cierre de la página */
+.outline {
+  width: 100%;
+  pointer-events: none;
+  user-select: none;
+}
+
+.stat {
+  margin-top: calc(-1 * var(--block-spacing));
+  margin-inline-start: auto;
+  width: min(259px, 100%);
+  margin-inline-end: clamp(16px, 6.6vw, 95px);
+  text-align: center;
+  color: var(--stat-color);
+}
+
+.place,
+.elevation {
+  display: block;
+}
+
+.place {
+  font-family: var(--stat-label-font);
+  font-size: var(--stat-label-size);
+  font-weight: var(--stat-label-weight);
+  line-height: var(--title-line-height);
+}
+
+.elevation {
+  margin-top: var(--space-2);
+  font-family: var(--stat-value-font);
+  font-size: var(--stat-value-size);
+  line-height: var(--title-line-height);
+}

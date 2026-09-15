@@ -1,0 +1,44 @@
+.button {
+  border: 0;
+  cursor: pointer;
+  border-radius: var(--pill-radius);
+  padding: var(--space-1);
+  min-width: 34px;
+  font-family: var(--ui-font);
+  font-size: var(--ui-size);
+  font-weight: var(--ui-weight);
+  line-height: 1;
+  background-color: transparent;
+  color: var(--text-color-muted);
+  transition:
+    background-color var(--transition-fast),
+    color var(--transition-fast);
+}
+
+/* La convención de hover de la marca es "aparece un relleno", no opacidad */
+.button:hover {
+  background-color: var(--chip-color);
+  color: var(--text-color-strong);
+}
+
+.active {
+  background-color: var(--primary-color);
+  color: var(--text-color-strong);
+}
+
+.active:hover {
+  background-color: var(--primary-color);
+}
+
+/* Chip de fondo que enmarca la pill activa */
+.chip {
+  display: inline-flex;
+  padding: 1px;
+  border-radius: var(--chip-radius);
+  background-color: transparent;
+  transition: background-color var(--transition-fast);
+}
+
+.chipActive {
+  background-color: var(--chip-color);
+}

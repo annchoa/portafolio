@@ -1,0 +1,9 @@
+/* El lienzo: un único color de fondo de borde a borde */
+.page {
+  position: relative;
+  width: 100%;
+  max-width: var(--page-max-width);
+  margin-inline: auto;
+  background-color: var(--background-color);
+  overflow: hidden;
+}

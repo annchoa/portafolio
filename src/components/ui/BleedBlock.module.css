@@ -1,0 +1,8 @@
+/* Slab de color redondeado que se sale del canvas y queda recortado.
+   Es decoración pura: nunca lleva contenido encima. */
+.block {
+  position: absolute;
+  border-radius: var(--card-radius);
+  pointer-events: none;
+  z-index: 0;
+}

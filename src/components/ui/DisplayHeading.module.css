@@ -1,0 +1,23 @@
+.heading {
+  margin: 0;
+  font-family: var(--title-font);
+  font-size: var(--title-size);
+  font-weight: var(--title-weight);
+  line-height: var(--title-line-height);
+  letter-spacing: var(--title-letter-spacing);
+  color: var(--title-color);
+  white-space: pre-line;
+}
+
+/* Los títulos de display desbordan el canvas a propósito: el recorte es el punto */
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.alt {
+  font-size: var(--title-alt-size);
+}

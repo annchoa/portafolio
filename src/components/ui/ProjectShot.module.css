@@ -1,0 +1,23 @@
+.shot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Variante sobre tarjeta blanca: 28px de radio, sin borde y sin sombra */
+.onCard {
+  background-color: var(--surface-color);
+  border-radius: var(--card-radius);
+  aspect-ratio: 589 / 379;
+}
+
+/* Variante a pelo sobre el navy */
+.bare {
+  aspect-ratio: 589 / 379;
+}
+
+.image {
+  width: 66%;
+  max-width: 389px;
+  object-fit: cover;
+}

@@ -1,0 +1,8 @@
+.heading {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.body {
+  margin-top: var(--block-spacing);
+}

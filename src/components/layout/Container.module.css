@@ -1,0 +1,11 @@
+/* Columna de contenido: respeta el gutter izquierdo del sistema (148px) */
+.container {
+  position: relative;
+  z-index: 1;
+  padding-inline: var(--page-gutter);
+}
+
+/* Los títulos de display ignoran el gutter y arrancan en x: 0 */
+.bleed {
+  padding-inline: 0;
+}

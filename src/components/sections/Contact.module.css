@@ -1,0 +1,30 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  font-family: var(--heading-font);
+  font-size: var(--heading-size);
+  font-weight: var(--heading-weight);
+  line-height: var(--heading-line-height);
+  color: var(--heading-color);
+  transform: rotate(-0.63deg);
+}
+
+.links {
+  margin-top: var(--stack-spacing);
+  display: flex;
+  flex-direction: column;
+  width: min(405px, 100%);
+  font-family: var(--label-font);
+  font-size: var(--label-size);
+  line-height: var(--title-line-height);
+}
+
+/* Las URLs se imprimen en crudo, como bloque de texto plano */
+.link {
+  color: var(--label-color);
+  word-break: break-word;
+}

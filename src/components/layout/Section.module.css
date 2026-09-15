@@ -1,0 +1,5 @@
+.section {
+  position: relative;
+  padding-top: var(--section-spacing);
+  overflow: hidden; /* el recorte de los bleed blocks es intencionado */
+}
