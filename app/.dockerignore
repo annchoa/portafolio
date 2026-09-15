@@ -2,7 +2,5 @@ node_modules
 dist
 .git
 .gitignore
-desig-system
 Dockerfile*
-docker-compose.yml
 *.md

@@ -2,12 +2,12 @@ services:
   # Desarrollo: http://localhost:5173 con hot-reload
   web-dev:
     build:
-      context: .
+      context: ./app
       dockerfile: Dockerfile.dev
     ports:
       - "5173:5173"
     volumes:
-      - .:/app
+      - ./app:/app
       - /app/node_modules
     environment:
       - CHOKIDAR_USEPOLLING=true
@@ -15,7 +15,7 @@ services:
   # Producción: http://localhost:8080 (build estático servido por nginx)
   web:
     build:
-      context: .
+      context: ./app
       dockerfile: Dockerfile
     ports:
       - "8080:80"
