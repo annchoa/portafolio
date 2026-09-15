@@ -1,0 +1,31 @@
+/* Type system — exact families, sizes and weights used in portafolio.fig */
+:root{
+  --font-display:"Bebas Neue","Bebas Neue Fallback",Impact,sans-serif;
+  --font-body:"Assistant","Assistant Fallback",-apple-system,"Segoe UI",sans-serif;
+  --font-ui:"Inter",-apple-system,"Segoe UI",sans-serif;
+
+  /* Display — Bebas Neue 400, line-height 100% */
+  --display-hero:200px;
+  --display-xl:180px;
+  --display-lg:64px;
+  --display-md:60px;
+  --display-sm:32px;
+
+  /* Body — Assistant */
+  --body-hero:40px;   /* ExtraBold 800 — stat label */
+  --body-lead:40px;   /* Regular 400 — name / role */
+  --body-lg:32px;     /* Bold 700 — section subheads */
+  --body-md:24px;     /* Regular 400 — paragraph copy */
+
+  /* UI — Inter (Navigation Pill, from the Figma variable collection) */
+  --ui-md:16px;
+  --ui-sm:14px;
+
+  --weight-regular:400;
+  --weight-bold:700;
+  --weight-extrabold:800;
+
+  --leading-tight:100%;
+  --leading-body:1.4;
+  --tracking-role:0.04em;
+}

@@ -1,0 +1,45 @@
+/* Brand palette — values transcribed verbatim from portafolio.fig (Page-1 / "portafolio", node 1:91) */
+:root{
+  /* Base — ground */
+  --navy-900:rgb(12,12,101);
+  --navy-800:rgb(2,1,137);
+  --ink-900:rgb(32,32,32);
+
+  /* Base — neon accents */
+  --green-500:rgb(0,213,28);
+  --orange-500:rgb(255,74,3);
+  --pink-500:rgb(255,0,115);
+  --pink-600:rgb(238,27,122);
+  --magenta-400:rgb(254,40,254);
+  --magenta-500:rgb(234,0,255);
+
+  /* Base — neutrals */
+  --white:rgb(255,255,255);
+  --off-white:rgb(252,252,252);
+  --gray-200:rgb(231,231,231);
+  --gray-300:rgb(214,214,214);
+
+  /* Semantic — surfaces */
+  --surface-page:var(--navy-900);
+  --surface-card:var(--white);
+  --surface-chip:var(--ink-900);
+  --surface-block-orange:var(--orange-500);
+  --surface-block-pink:var(--pink-600);
+  --surface-block-magenta:var(--magenta-500);
+  --surface-block-pink-solid:var(--pink-500);
+
+  /* Semantic — text */
+  --text-display:var(--magenta-500);
+  --text-display-alt:var(--pink-600);
+  --text-display-warn:var(--orange-500);
+  --text-on-page:var(--gray-200);
+  --text-body:var(--off-white);
+  --text-strong:var(--white);
+  --text-label:var(--gray-200);
+  --text-stat:var(--green-500);
+  --text-muted:var(--gray-300);
+
+  /* Semantic — lines */
+  --line-hairline:var(--off-white);
+  --line-illustration:var(--white);
+}

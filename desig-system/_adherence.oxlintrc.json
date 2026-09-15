@@ -1,0 +1,276 @@
+{
+  "plugins": [
+    "react",
+    "import"
+  ],
+  "rules": {
+    "react/forbid-elements": [
+      "warn",
+      {
+        "forbid": []
+      }
+    ],
+    "no-restricted-imports": [
+      "warn",
+      {
+        "patterns": [
+          {
+            "group": [
+              "components/navigation/**",
+              "ui_kits/portfolio/**"
+            ],
+            "message": "Import design-system components from 'index.js', not component internals."
+          }
+        ]
+      }
+    ],
+    "no-restricted-syntax": [
+      "warn",
+      {
+        "selector": "Literal[value=/#[0-9a-fA-F]{3,8}\\b/]",
+        "message": "Raw hex color — use a design-system color token via var()."
+      },
+      {
+        "selector": "Literal[value=/\\b\\d+px\\b/]",
+        "message": "Raw px value — use a design-system spacing token via var()."
+      },
+      {
+        "selector": "Literal[value=/font-family\\s*:\\s*(?!['\\\"]?(?:Bebas Neue|Assistant|Inter))/i]",
+        "message": "Font not provided by the design system. Available: Bebas Neue, Assistant, Inter."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='NavigationPill'] > JSXAttribute > JSXIdentifier[name!=/^(?:className|style|label|state|key|ref|className|style|children)$/]",
+        "message": "<NavigationPill> doesn't accept that prop. Declared props: className, style, label, state."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='NavigationPill'] > JSXAttribute[name.name='state'] > Literal[value!=/^(?:default|active|hover)$/]",
+        "message": "<NavigationPill> state must be one of 'default' | 'active' | 'hover'."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='NavigationPillList'] > JSXAttribute > JSXIdentifier[name!=/^(?:className|style|link1|link6|slot|link7|slot2|link3|link2|link4|link5|direction|icon1|icon2|icon3|icon4|key|ref|className|style|children)$/]",
+        "message": "<NavigationPillList> doesn't accept that prop. Declared props: className, style, link1, link6, slot, link7, slot2, link3, link2, link4, link5, direction, icon1, icon2, icon3, icon4."
+      },
+      {
+        "selector": "JSXOpeningElement[name.name='NavigationPillList'] > JSXAttribute[name.name='direction'] > Literal[value!=/^(?:row|column)$/]",
+        "message": "<NavigationPillList> direction must be one of 'row' | 'column'."
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/index.js"
+      ],
+      "rules": {
+        "no-restricted-imports": "off"
+      }
+    }
+  ],
+  "x-omelette": {
+    "components": {
+      "NavigationPill": {
+        "replaces": []
+      },
+      "NavigationPillList": {
+        "replaces": []
+      }
+    },
+    "tokens": [
+      "--background-brand-tertiary",
+      "--background-default-default-hover",
+      "--body-font-family",
+      "--body-font-weight-regular",
+      "--body-font-weight-strong",
+      "--body-hero",
+      "--body-lead",
+      "--body-lg",
+      "--body-md",
+      "--body-size-medium",
+      "--body-size-small",
+      "--border-neutral-default",
+      "--border-width",
+      "--brand-100",
+      "--brand-600",
+      "--brand-900",
+      "--card-height",
+      "--column-width",
+      "--display-hero",
+      "--display-lg",
+      "--display-md",
+      "--display-sm",
+      "--display-xl",
+      "--family-sans",
+      "--font-body",
+      "--font-display",
+      "--font-ui",
+      "--gray-100",
+      "--gray-200",
+      "--gray-300",
+      "--gray-700",
+      "--gray-900",
+      "--green-500",
+      "--ink-900",
+      "--leading-body",
+      "--leading-tight",
+      "--line-hairline",
+      "--line-illustration",
+      "--magenta-400",
+      "--magenta-500",
+      "--navy-800",
+      "--navy-900",
+      "--off-white",
+      "--orange-500",
+      "--page-gutter",
+      "--page-width",
+      "--pink-500",
+      "--pink-600",
+      "--radius-200",
+      "--radius-block",
+      "--radius-chip",
+      "--radius-pill",
+      "--scale-02",
+      "--scale-03",
+      "--slate-100",
+      "--slate-1000",
+      "--slate-900",
+      "--space-1",
+      "--space-2",
+      "--space-200",
+      "--space-3",
+      "--space-4",
+      "--space-5",
+      "--stroke-hairline",
+      "--stroke-illustration",
+      "--surface-block-magenta",
+      "--surface-block-orange",
+      "--surface-block-pink",
+      "--surface-block-pink-solid",
+      "--surface-card",
+      "--surface-chip",
+      "--surface-page",
+      "--text-body",
+      "--text-brand-on-brand",
+      "--text-brand-on-brand-secondary",
+      "--text-default-default",
+      "--text-display",
+      "--text-display-alt",
+      "--text-display-warn",
+      "--text-label",
+      "--text-muted",
+      "--text-neutral-on-neutral",
+      "--text-on-page",
+      "--text-stat",
+      "--text-strong",
+      "--tracking-role",
+      "--ui-md",
+      "--ui-sm",
+      "--weight-bold",
+      "--weight-extrabold",
+      "--weight-regular",
+      "--weight-semibold",
+      "--white",
+      "--white-1000"
+    ],
+    "tokenKinds": {
+      "--navy-900": "color",
+      "--navy-800": "color",
+      "--ink-900": "color",
+      "--green-500": "color",
+      "--orange-500": "color",
+      "--pink-500": "color",
+      "--pink-600": "color",
+      "--magenta-400": "color",
+      "--magenta-500": "color",
+      "--white": "color",
+      "--off-white": "color",
+      "--gray-200": "color",
+      "--gray-300": "color",
+      "--surface-page": "color",
+      "--surface-card": "color",
+      "--surface-chip": "color",
+      "--surface-block-orange": "color",
+      "--surface-block-pink": "color",
+      "--surface-block-magenta": "color",
+      "--surface-block-pink-solid": "color",
+      "--text-display": "font",
+      "--text-display-alt": "font",
+      "--text-display-warn": "font",
+      "--text-on-page": "font",
+      "--text-body": "font",
+      "--text-strong": "font",
+      "--text-label": "font",
+      "--text-stat": "font",
+      "--text-muted": "font",
+      "--line-hairline": "color",
+      "--line-illustration": "color",
+      "--font-display": "font",
+      "--font-body": "font",
+      "--font-ui": "font",
+      "--display-hero": "spacing",
+      "--display-xl": "spacing",
+      "--display-lg": "spacing",
+      "--display-md": "spacing",
+      "--display-sm": "spacing",
+      "--body-hero": "spacing",
+      "--body-lead": "spacing",
+      "--body-lg": "spacing",
+      "--body-md": "spacing",
+      "--ui-md": "spacing",
+      "--ui-sm": "spacing",
+      "--weight-regular": "font",
+      "--weight-bold": "font",
+      "--weight-extrabold": "font",
+      "--leading-tight": "font",
+      "--leading-body": "font",
+      "--tracking-role": "font",
+      "--page-width": "spacing",
+      "--page-gutter": "spacing",
+      "--column-width": "spacing",
+      "--card-height": "spacing",
+      "--radius-block": "radius",
+      "--radius-pill": "radius",
+      "--radius-chip": "radius",
+      "--space-1": "spacing",
+      "--space-2": "spacing",
+      "--space-3": "spacing",
+      "--space-4": "spacing",
+      "--space-5": "spacing",
+      "--stroke-hairline": "color",
+      "--stroke-illustration": "color",
+      "--background-brand-tertiary": "color",
+      "--background-default-default-hover": "color",
+      "--body-font-family": "font",
+      "--body-font-weight-regular": "font",
+      "--body-font-weight-strong": "font",
+      "--body-size-medium": "spacing",
+      "--body-size-small": "spacing",
+      "--border-neutral-default": "color",
+      "--border-width": "spacing",
+      "--brand-100": "color",
+      "--brand-600": "color",
+      "--brand-900": "color",
+      "--family-sans": "font",
+      "--gray-100": "color",
+      "--gray-700": "color",
+      "--gray-900": "color",
+      "--radius-200": "radius",
+      "--scale-02": "font",
+      "--scale-03": "font",
+      "--slate-1000": "color",
+      "--slate-100": "color",
+      "--slate-900": "color",
+      "--space-200": "spacing",
+      "--text-brand-on-brand-secondary": "color",
+      "--text-brand-on-brand": "color",
+      "--text-default-default": "color",
+      "--text-neutral-on-neutral": "color",
+      "--weight-semibold": "font",
+      "--white-1000": "color"
+    },
+    "fontFamilies": [
+      "Assistant",
+      "Bebas Neue",
+      "Inter"
+    ]
+  }
+}

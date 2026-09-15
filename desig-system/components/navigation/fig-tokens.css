@@ -1,0 +1,53 @@
+/* Generated from Figma Variables. First mode = :root default.
+   FLOAT tokens are unitless — multiply by 1px in calc() where a length is needed. */
+
+:root {
+  --background-brand-tertiary: var(--brand-100); /* @kind color */
+  --background-default-default-hover: var(--gray-100); /* @kind color */
+  --body-font-family: var(--family-sans);
+  --body-font-weight-regular: var(--weight-regular);
+  --body-font-weight-strong: var(--weight-semibold);
+  --body-size-medium: var(--scale-03);
+  --body-size-small: var(--scale-02);
+  --border-neutral-default: var(--slate-900); /* @kind color */
+  --border-width: 1; /* @kind spacing */
+  --brand-100: rgb(245,245,245); /* @kind color */
+  --brand-600: rgb(68,68,68); /* @kind color */
+  --brand-900: rgb(30,30,30); /* @kind color */
+  --family-sans: "Inter"; /* @kind font */
+  --gray-100: rgb(245,245,245); /* @kind color */
+  --gray-700: rgb(56,56,56); /* @kind color */
+  --gray-900: rgb(30,30,30); /* @kind color */
+  --radius-200: 8;
+  --scale-02: 14; /* @kind font */
+  --scale-03: 16; /* @kind font */
+  --slate-1000: rgb(36,36,36); /* @kind color */
+  --slate-100: rgb(243,243,243); /* @kind color */
+  --slate-900: rgb(48,48,48); /* @kind color */
+  --space-200: 8;
+  --text-brand-on-brand-secondary: var(--brand-900); /* @kind color */
+  --text-brand-on-brand: var(--brand-100); /* @kind color */
+  --text-default-default: var(--gray-900); /* @kind color */
+  --text-neutral-on-neutral: var(--slate-100); /* @kind color */
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --white-1000: rgb(255,255,255); /* @kind color */
+}
+
+:root[data-theme="dark"], .dark {
+  --background-brand-tertiary: var(--brand-600); /* @kind color */
+  --background-default-default-hover: var(--gray-700); /* @kind color */
+  --border-neutral-default: var(--slate-100); /* @kind color */
+  --text-brand-on-brand-secondary: var(--brand-100); /* @kind color */
+  --text-brand-on-brand: var(--brand-900); /* @kind color */
+  --text-default-default: var(--white-1000); /* @kind color */
+  --text-neutral-on-neutral: var(--slate-1000); /* @kind color */
+}
+
+:root[data-mode="mobile"] {
+  --border-width: 1; /* @kind spacing */
+}
+
+:root[data-mode="tablet"] {
+  --border-width: 1; /* @kind spacing */
+}

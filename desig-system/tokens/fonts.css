@@ -1,0 +1,5 @@
+/* Webfonts. The .fig carries no font binaries, so the three families it names
+   (Bebas Neue, Assistant, Inter) are loaded from Google Fonts — all three are
+   the genuine families, not substitutes. Swap these @import lines for local
+   @font-face rules if you receive the licensed files. */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Assistant:wght@400;700;800&family=Inter:wght@400;600&display=swap");

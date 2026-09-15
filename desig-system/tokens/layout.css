@@ -1,0 +1,22 @@
+/* Geometry & layout — page is a single 1440px-wide canvas */
+:root{
+  --page-width:1440px;
+  --page-gutter:148px;      /* left text column origin */
+  --column-width:589px;     /* project card / text column */
+  --card-height:379px;
+
+  /* Radii — only three exist in the source */
+  --radius-block:28px;      /* bleed blocks + project cards */
+  --radius-pill:8px;        /* Navigation Pill */
+  --radius-chip:5px;        /* language chip backing */
+
+  /* Spacing — the source's own step values */
+  --space-1:8px;
+  --space-2:18px;
+  --space-3:28px;
+  --space-4:74px;
+  --space-5:148px;
+
+  --stroke-hairline:1px;
+  --stroke-illustration:2.5px;
+}
