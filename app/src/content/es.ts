@@ -7,7 +7,11 @@ const PLACEHOLDER =
 export const es: Copy = {
   name: 'andrea natalia\nnaranjo chávez',
   role: 'PRODUCT ENGINEER',
-  bio: 'Nací entre volcanes, a 2,754 m sobre el nivel del mar. Estudié periodismo y hace 8 años cambié de profesión y país. Estudié en España un Master en Gestión de la Información y empecé a programar con una escuela autogestionada en Valencia, la Devescola. Hace 6 años he desarrollado software para ClimateTrade, QueryLayer y Passporter. Defensora de las metodologías ágiles y el Lean UX, investigo de forma autónoma por la integración del diseño en plataformas web.',
+  bio: [
+    'Nací entre volcanes, a 2,754 m sobre el nivel del mar. Estudié periodismo y hace 8 años cambié de profesión y país. Estudié en España un Master en Gestión de la Información y empecé a programar con una escuela autogestionada en Valencia, ',
+    { label: 'Devescola', href: 'https://gitlab.com/devscola' },
+    '. Hace 6 años he desarrollado software para ClimateTrade, QueryLayer y Passporter. Defensora de las metodologías ágiles y el Lean UX, investigo de forma autónoma por la integración del diseño en plataformas web.',
+  ],
   sections: {
     projects: 'PROYECTOS',
     experience: 'EXPERIENCIA',
@@ -19,8 +23,8 @@ export const es: Copy = {
       label: 'passporter',
       paragraphs: [PLACEHOLDER, PLACEHOLDER],
       shots: [
-        { src: asset('assets/portrait-tile.png'), alt: '', onCard: false },
-        { src: asset('assets/portrait-tile.png'), alt: '', onCard: true },
+        { src: asset('assets/passporter-itinerary.png'), alt: '', onCard: false },
+        { src: asset('assets/passporter-travel-ideas.png'), alt: '', onCard: true },
       ],
     },
     {

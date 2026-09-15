@@ -32,10 +32,12 @@ export interface Community {
   href: string;
 }
 
+export type BioSegment = string | { label: string; href: string };
+
 export interface Copy {
   name: string;
   role: string;
-  bio: string;
+  bio: BioSegment[];
   sections: {
     projects: string;
     experience: string;

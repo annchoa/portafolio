@@ -14,7 +14,23 @@ export function Hero() {
         <h1 className={styles.name}>{copy.name}</h1>
         <p className={styles.role}>{copy.role}</p>
 
-        <p className={styles.bio}>{copy.bio}</p>
+        <p className={styles.bio}>
+          {copy.bio.map((segment) =>
+            typeof segment === 'string' ? (
+              segment
+            ) : (
+              <a
+                className={styles.link}
+                key={segment.href}
+                href={segment.href}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                {segment.label}
+              </a>
+            ),
+          )}
+        </p>
         <LanguageSwitch />
       </div>
     </header>

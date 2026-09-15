@@ -8,7 +8,11 @@ const PLACEHOLDER =
 export const en: Copy = {
   ...es,
   role: 'PRODUCT ENGINEER',
-  bio: 'I was born among volcanoes, 2,754 m above sea level. I studied journalism and eight years ago I changed profession and country. In Spain I took a Master in Information Management and started programming at a self-managed school in Valencia, la Devescola. For six years I have built software for ClimateTrade, QueryLayer and Passporter. An advocate of agile methodologies and Lean UX, I research independently into the integration of design in web platforms.',
+  bio: [
+    'I was born among volcanoes, 2,754 m above sea level. I studied journalism and eight years ago I changed profession and country. In Spain I took a Master in Information Management and started programming at a self-managed school in Valencia, ',
+    { label: 'Devescola', href: 'https://gitlab.com/devscola' },
+    '. For six years I have built software for ClimateTrade, QueryLayer and Passporter. An advocate of agile methodologies and Lean UX, I research independently into the integration of design in web platforms.',
+  ],
   sections: {
     projects: 'PROJECTS',
     experience: 'EXPERIENCE',
