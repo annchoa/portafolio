@@ -1,4 +1,5 @@
 import type { Copy } from '@/types/content';
+import { asset } from '@/lib/asset';
 import { es } from '@/content/es';
 
 const PLACEHOLDER =
@@ -19,16 +20,16 @@ export const en: Copy = {
       label: 'passporter',
       paragraphs: [PLACEHOLDER, PLACEHOLDER],
       shots: [
-        { src: '/assets/portrait-tile.png', alt: '', onCard: false },
-        { src: '/assets/portrait-tile.png', alt: '', onCard: true },
+        { src: asset('assets/portrait-tile.png'), alt: '', onCard: false },
+        { src: asset('assets/portrait-tile.png'), alt: '', onCard: true },
       ],
     },
     {
       label: 'wiski',
       paragraphs: [PLACEHOLDER, PLACEHOLDER],
       shots: [
-        { src: '/assets/portrait-tile.png', alt: '', onCard: true },
-        { src: '/assets/portrait-tile.png', alt: '', onCard: false },
+        { src: asset('assets/portrait-tile.png'), alt: '', onCard: true },
+        { src: asset('assets/portrait-tile.png'), alt: '', onCard: false },
       ],
     },
   ],

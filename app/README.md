@@ -1,79 +1,91 @@
-# app — la web
+# app — the website
 
-React 19 + TypeScript + Vite. Construida sobre el design system de `../desig-system/`.
+React 19 + TypeScript + Vite. Built on the design system in `../desig-system/`.
 
-Se arranca desde la raíz del repositorio con `docker compose up web-dev`
-(ver [`../README.md`](../README.md)).
+Start it from the repository root with `docker compose up web-dev`
+(see [`../README.md`](../README.md)).
 
-## Cómo cambiar el aspecto
+## How to change the look
 
-Todo el diseño vive en variables CSS, en dos capas:
+The whole design lives in CSS variables, in two layers:
 
-| Fichero | Qué contiene | ¿Se toca? |
+| File | What it holds | Edit it? |
 |---|---|---|
-| `src/styles/tokens.css` | Valores crudos de la marca (`--pink-500`, `--navy-900`, `--space-3`…) | Sólo si cambia la paleta de marca |
-| `src/styles/theme.css` | Variables semánticas (`--primary-color`, `--title-size`, `--subtitle-font`…) | **Sí — es el fichero que se edita** |
+| `src/styles/tokens.css` | Raw brand values (`--pink-500`, `--navy-900`, `--space-3`…) | Only if the brand palette itself changes |
+| `src/styles/theme.css` | Semantic variables (`--primary-color`, `--title-size`, `--subtitle-font`…) | **Yes — this is the file you edit** |
 
-Ejemplos:
+Examples:
 
 ```css
-/* Cambiar el color primario de toda la web */
+/* Change the primary color across the whole site */
 --primary-color: var(--green-500);
 
-/* Cambiar el fondo */
+/* Change the background */
 --background-color: var(--ink-900);
 
-/* Cambiar la tipografía de los títulos */
+/* Change the heading typeface */
 --title-font: var(--font-family-body);
 --title-size: clamp(3rem, 10vw, 140px);
 ```
 
-Ningún componente lleva colores ni tamaños hardcodeados: todos leen variables.
+No component hardcodes a color or a size: they all read variables.
 
-## Estructura
+## Structure
 
 ```
-Dockerfile         build de producción (node → nginx)
-Dockerfile.dev     servidor de desarrollo
+Dockerfile         production build (node → nginx)
+Dockerfile.dev     development server
 nginx.conf
-index.html         HTML primero, <script> al final del body
+index.html         HTML first, <script> at the end of the body
 src/
-  main.tsx         punto de entrada
-  App.tsx          composición de secciones
+  main.tsx         entry point
+  App.tsx          section composition
   styles/
     global.css     fonts → tokens → theme → reset
-    tokens.css     capa 1: valores de marca
-    theme.css      capa 2: variables semánticas  ← editar aquí
+    tokens.css     layer 1: brand values
+    theme.css      layer 2: semantic variables  ← edit here
     reset.css
   components/
     layout/        Page, Section, Container
     sections/      Hero, Projects, Experience, Community, Contact, Footer
     ui/            Button, DisplayHeading, BleedBlock, ProjectShot, TextColumns
-  content/         copy ES / EN tipado
-  context/ hooks/  idioma (EN/ES)
-  types/           tipos del contenido
-public/assets/     SVG y bitmap copiados del design system
+  content/         typed ES / EN copy
+  context/ hooks/  language (EN/ES)
+  lib/             asset() — builds public/ URLs honouring the Vite base
+  types/           content types
+public/assets/     SVGs and bitmap copied from the design system
 ```
 
-Los imports usan el alias `@/` → `src/` (configurado en `vite.config.ts` y `tsconfig.app.json`):
+Imports use the `@/` alias → `src/` (configured in `vite.config.ts` and `tsconfig.app.json`):
 
 ```ts
 import { Button } from '@/components/ui/Button';
 ```
 
-## Contenido
+## Assets
 
-El `.fig` original trae Lorem Ipsum en todos los párrafos de proyecto y experiencia, y el mismo bitmap
-en los cuatro huecos de imagen. Se reproduce tal cual en `src/content/es.ts`; sustituye esos textos e
-imágenes cuando tengas el contenido real.
+Files in `public/assets/` are referenced through `asset()` from `@/lib/asset`, never as a
+hand-written absolute path. Vite rewrites the base in HTML and in imports, but not in path
+strings living inside JS — and GitHub Pages serves the site from `/portafolio/`, so a raw
+`/assets/photo.png` would 404 there.
 
-Los assets de `public/assets/` son copia de `../desig-system/assets/`. Si el design system cambia,
-vuelve a copiarlos.
+```tsx
+<img src={asset('assets/green-scribble.svg')} alt="" />
+```
+
+These files are a copy of `../desig-system/assets/`. If the design system changes them,
+copy them over again.
+
+## Content
+
+The original `.fig` carries Lorem Ipsum in every project and experience paragraph, and the
+same bitmap in all four image slots. That is reproduced as-is in `src/content/es.ts`;
+replace those texts and images once the real content exists.
 
 ## Scripts
 
 ```bash
-npm run dev        # servidor de desarrollo
-npm run build      # typecheck + build de producción
-npm run typecheck  # sólo TypeScript
+npm run dev        # development server
+npm run build      # typecheck + production build
+npm run typecheck  # TypeScript only
 ```

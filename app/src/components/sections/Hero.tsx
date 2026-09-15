@@ -1,4 +1,5 @@
 import styles from '@/components/sections/Hero.module.css';
+import { asset } from '@/lib/asset';
 import { LanguageSwitch } from '@/components/sections/LanguageSwitch';
 import { useLanguage } from '@/hooks/useLanguage';
 
@@ -7,7 +8,7 @@ export function Hero() {
 
   return (
     <header className={styles.hero}>
-      <img className={styles.scribble} src="/assets/green-scribble.svg" alt="" aria-hidden="true" />
+      <img className={styles.scribble} src={asset('assets/green-scribble.svg')} alt="" aria-hidden="true" />
 
       <div className={styles.content}>
         <h1 className={styles.name}>{copy.name}</h1>

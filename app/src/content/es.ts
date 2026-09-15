@@ -1,4 +1,5 @@
 import type { Copy } from '@/types/content';
+import { asset } from '@/lib/asset';
 
 const PLACEHOLDER =
   'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London.';
@@ -18,16 +19,16 @@ export const es: Copy = {
       label: 'passporter',
       paragraphs: [PLACEHOLDER, PLACEHOLDER],
       shots: [
-        { src: '/assets/portrait-tile.png', alt: '', onCard: false },
-        { src: '/assets/portrait-tile.png', alt: '', onCard: true },
+        { src: asset('assets/portrait-tile.png'), alt: '', onCard: false },
+        { src: asset('assets/portrait-tile.png'), alt: '', onCard: true },
       ],
     },
     {
       label: 'wiski',
       paragraphs: [PLACEHOLDER, PLACEHOLDER],
       shots: [
-        { src: '/assets/portrait-tile.png', alt: '', onCard: true },
-        { src: '/assets/portrait-tile.png', alt: '', onCard: false },
+        { src: asset('assets/portrait-tile.png'), alt: '', onCard: true },
+        { src: asset('assets/portrait-tile.png'), alt: '', onCard: false },
       ],
     },
   ],

@@ -27,6 +27,10 @@ function scriptAfterHtml(): Plugin {
 }
 
 export default defineConfig({
+  /* GitHub Pages sirve el sitio en /<repo>/, no en la raíz. El workflow
+     pasa BASE_PATH; en local queda '/'. Todo lo que apunte a /public debe
+     construir su URL con asset() (src/lib/asset.ts) para respetarlo. */
+  base: process.env.BASE_PATH ?? '/',
   plugins: [react(), scriptAfterHtml()],
   resolve: {
     // Alias de rutas: @/components/ui/Button, @/styles/theme.css, ...
