@@ -24,7 +24,9 @@ export const es: Copy = {
       paragraphs: [PLACEHOLDER, PLACEHOLDER],
       shots: [
         { src: asset('assets/passporter-itinerary.png'), alt: '', onCard: false },
-        { src: asset('assets/passporter-travel-ideas.png'), alt: '', onCard: true },
+        { src: asset('assets/passporter-travel-ideas.png'), alt: '', onCard: false },
+        { src: asset('assets/passporter-dialog.png'), alt: '', onCard: false },
+        { src: asset('assets/passporter-dashboard.png'), alt: '', onCard: false },
       ],
     },
     {

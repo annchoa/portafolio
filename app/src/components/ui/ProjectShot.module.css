@@ -1,5 +1,7 @@
 .shot {
   display: flex;
+  gap: 25px;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -17,7 +19,7 @@
 }
 
 .image {
-  width: 66%;
-  max-width: 389px;
+  width: 100%;
+  max-width: 900px;
   object-fit: cover;
 }

@@ -25,7 +25,7 @@ export const en: Copy = {
       paragraphs: [PLACEHOLDER, PLACEHOLDER],
       shots: [
         { src: asset('assets/portrait-tile.png'), alt: '', onCard: false },
-        { src: asset('assets/portrait-tile.png'), alt: '', onCard: true },
+        { src: asset('assets/portrait-tile.png'), alt: '', onCard: false },
       ],
     },
     {
