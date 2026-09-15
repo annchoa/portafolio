@@ -22,9 +22,12 @@ export interface ExperienceEntry {
 export type ContactIcon = 'linkedin' | 'github' | 'gitlab';
 
 export interface ContactLink {
-  /** Identifica la marca: elige el icono y sus ajustes de color */
   icon: ContactIcon;
-  /** Las URLs se muestran en crudo, sin acortar (regla del design system) */
+  label: string;
+  href: string;
+}
+
+export interface Community {
   label: string;
   href: string;
 }
@@ -41,7 +44,7 @@ export interface Copy {
   };
   projects: Project[];
   experience: ExperienceEntry;
-  community: string[];
+  community: Community[];
   links: ContactLink[];
   footer: {
     place: string;

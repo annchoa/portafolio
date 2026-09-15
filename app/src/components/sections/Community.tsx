@@ -22,11 +22,22 @@ export function Community() {
       <Container>
         <ul className={styles.list}>
           {copy.community.map((entry) => (
-            <li className={styles.item} key={entry}>
+            <li className={styles.item} key={entry.label}>
               <span className={styles.bullet} aria-hidden="true">
                 •
               </span>
-              <span>{entry}</span>
+              {entry.href ? (
+                <a
+                  className={styles.link}
+                  href={entry.href}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  {entry.label}
+                </a>
+              ) : (
+                <span>{entry.label}</span>
+              )}
             </li>
           ))}
         </ul>

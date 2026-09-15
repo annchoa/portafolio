@@ -36,10 +36,11 @@ export const es: Copy = {
     paragraphs: [PLACEHOLDER, PLACEHOLDER],
   },
   community: [
-    'Speaker — Test-Driven Development, Drupal Camp Spain (2023)',
-    'Speaker — Extreme Programming, Drupal Camp Spain (2024)',
-    'Mentor — Technovation Challenge Valencia (2019)',
-    'Ambassador — Women in Data Science (WiDS) at Stanford University (2019–2020) and WiDS Worldwide (2021–2022)',
+    { label: 'Diseñadora — Diseño para web y soportes impresos y digitales — VLC Tech Fest (ediciones 2024 y 2025)', href: 'https://vlctechfest.org/es/'},
+    { label: 'Ponente — Test-Driven Development, Drupal Camp Spain (2023)', href: 'https://www.youtube.com/watch?v=V9qjpxck9BE'},
+    { label: 'Ponente — Extreme Programming, Drupal Camp Spain (2024)', href: ''},
+    { label: 'Mentora — Technovation Challenge Valencia (2019)', href: 'https://technovationchallenge.org/'},
+    { label: 'Embajadora — Women in Data Science (WiDS) por la Universidad de Stanford (2019–2020) and WiDS Worldwide (2021–2022)', href: 'https://widsvalencia.vlctechhub.org/'},
   ],
   links: [
     { icon: 'linkedin', label: 'linkedin.com/in/annchoa', href: 'https://linkedin.com/in/annchoa' },

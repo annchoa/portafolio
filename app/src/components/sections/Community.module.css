@@ -16,6 +16,17 @@
   color: var(--body-color);
 }
 
+.link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.link:hover,
+.link:focus-visible {
+  color: var(--accent-color);
+}
+
 /* La lista usa una viñeta lisa: el sistema no define iconografía */
 .bullet {
   color: var(--accent-color);

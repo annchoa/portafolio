@@ -37,6 +37,11 @@
   word-break: break-word;
 }
 
+.link:hover,
+.link:focus-visible {
+  color: var(--accent-color);
+}
+
 .icon {
   width: var(--contact-icon-size);
   height: var(--contact-icon-size);
