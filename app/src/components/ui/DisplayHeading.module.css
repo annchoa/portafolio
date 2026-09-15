@@ -6,7 +6,11 @@
   line-height: var(--title-line-height);
   letter-spacing: var(--title-letter-spacing);
   color: var(--title-color);
-  white-space: pre-line;
+  /* `pre` (no `pre-line`): el título se parte SÓLO donde el copy pone un
+     \n, y nunca por falta de sitio. Así "COMUNIDAD y RECONOCIMIENTOS"
+     son siempre dos líneas, sea cual sea el viewport; si no cabe,
+     desborda y lo recorta el canvas, que es lo que pide el sistema. */
+  white-space: pre;
 }
 
 /* Los títulos de display desbordan el canvas a propósito: el recorte es el punto */

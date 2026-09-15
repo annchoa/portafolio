@@ -11,7 +11,7 @@ export const es: Copy = {
   sections: {
     projects: 'PROYECTOS',
     experience: 'EXPERIENCIA',
-    community: 'COMUNIDAD y RECONOCIMIENTOS',
+    community: 'COMUNIDAD y\nRECONOCIMIENTOS',
     contact: 'contáctame',
   },
   projects: [
