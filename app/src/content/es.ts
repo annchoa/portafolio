@@ -8,9 +8,18 @@ export const es: Copy = {
   name: 'andrea natalia\nnaranjo chávez',
   role: 'PRODUCT ENGINEER',
   bio: [
-    'Nací entre volcanes, a 2,754 m sobre el nivel del mar. Estudié periodismo y hace 8 años cambié de profesión y país. Estudié en España un Master en Gestión de la Información y empecé a programar con una escuela autogestionada en Valencia, ',
+    'Nací entre volcanes, a 2.754 metros sobre el nivel del mar. Estudié periodismo y hace 8 años cambié de profesión y país. Estudié en la ',
+    {label: 'UPV', href: 'https://www.upv.es/index-en.html'}, ' el Master en Gestión de la Información, empecé a programar en, ',
     { label: 'Devescola', href: 'https://gitlab.com/devscola' },
-    '. Hace 6 años he desarrollado software para ClimateTrade, QueryLayer y Passporter. Defensora de las metodologías ágiles y el Lean UX, investigo de forma autónoma por la integración del diseño en plataformas web.',
+    ', una escuela autogestionada en Valencia. Desde hace seis años desarrollo software para empresas como QueryLayer (ahora ',
+    { label: 'TrustWorks', href: 'https://trustworks.io' },
+    '), Belike Software (adquirida por ',
+    { label: 'Sngular', href: 'https://www.sngular.com' },
+    ' en 2022), ',
+    { label: 'Passporter', href: 'https://passporterapp.com' },
+    ' y ',
+    { label: 'Digital Tack', href: 'https://www.digitaltack.com/' },
+    '. Trabajo con metodologías ágiles y Lean UX: iterar constantemente entre priorizar, escuchar a quien usa el producto, no enamorarse de la primera versión y volver a empezar. Me interesa también el diseño, así que he colaborado en el diseño e interacción de ususario de algunos lugares',
   ],
   sections: {
     projects: 'PROYECTOS',
@@ -39,7 +48,7 @@ export const es: Copy = {
     },
   ],
   experience: {
-    paragraphs: [PLACEHOLDER, PLACEHOLDER],
+    paragraphs: ['He trebajado en', 'Me interesa el diseño de marca y de plataformas web. El diseño de este portafolio es de mi autoria. La aplicación ha sido realizada con IA'],
   },
   community: [
     { label: 'Diseñadora — Diseño para web y soportes impresos y digitales — VLC Tech Fest (ediciones 2024 y 2025)', href: 'https://vlctechfest.org/es/'},
