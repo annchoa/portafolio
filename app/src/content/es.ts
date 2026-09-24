@@ -10,7 +10,7 @@ export const es: Copy = {
   bio: [
     'Nací entre volcanes, a 2.754 metros sobre el nivel del mar. Estudié periodismo y hace 8 años cambié de profesión y país. Estudié en la ',
     {label: 'UPV', href: 'https://www.upv.es/index-en.html'}, ' el Master en Gestión de la Información, empecé a programar en, ',
-    { label: 'Devescola', href: 'https://gitlab.com/devscola' },
+    { label: 'Devscola', href: 'https://gitlab.com/devscola' },
     ', una escuela autogestionada en Valencia. Desde hace seis años desarrollo software para empresas como QueryLayer (ahora ',
     { label: 'TrustWorks', href: 'https://trustworks.io' },
     '), Belike Software (adquirida por ',
