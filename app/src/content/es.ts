@@ -19,7 +19,6 @@ export const es: Copy = {
     { label: 'Passporter', href: 'https://passporterapp.com' },
     ' y ',
     { label: 'Digital Tack', href: 'https://www.digitaltack.com/' },
-    '. Trabajo con metodologías ágiles y Lean UX: iterar constantemente entre priorizar, escuchar a quien usa el producto, no enamorarse de la primera versión y volver a empezar. Me interesa también el diseño, así que he colaborado en el diseño e interacción de ususario de algunos lugares',
   ],
   sections: {
     projects: 'PROYECTOS',
@@ -48,7 +47,7 @@ export const es: Copy = {
     },
   ],
   experience: {
-    paragraphs: ['He trebajado en', 'Me interesa el diseño de marca y de plataformas web. El diseño de este portafolio es de mi autoria. La aplicación ha sido realizada con IA'],
+    paragraphs: ['Trabajo con metodologías ágiles y Lean UX: iterar constantemente entre priorizar, escuchar a quien usa el producto, no enamorarse de la primera versión y volver a empezar. Me interesa también el diseño, así que he colaborado en el diseño e interacción de ususario de algunos lugares', 'Me interesa el diseño de marca y de plataformas web. El diseño de este portafolio es de mi autoria. La aplicación ha sido realizada con IA'],
   },
   community: [
     { label: 'Diseñadora — Diseño para web y soportes impresos y digitales — VLC Tech Fest (ediciones 2024 y 2025)', href: 'https://vlctechfest.org/es/'},
