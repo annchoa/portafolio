@@ -1,5 +1,6 @@
 import { LanguageProvider } from '@/context/LanguageProvider';
 import { Page } from '@/components/layout/Page';
+import { SnakeBackdrop } from '@/components/layout/SnakeBackdrop';
 import { Hero } from '@/components/sections/Hero';
 import { Projects } from '@/components/sections/Projects';
 import { Experience } from '@/components/sections/Experience';
@@ -12,11 +13,13 @@ export function App() {
     <LanguageProvider defaultLanguage="ES">
       <Page>
         <Hero />
-        <Projects />
-        <Experience />
-        <Community />
-        <Contact />
-        <Footer />
+        <SnakeBackdrop>
+          <Projects />
+          <Experience />
+          <Community />
+          <Contact />
+          <Footer />
+        </SnakeBackdrop>
       </Page>
     </LanguageProvider>
   );

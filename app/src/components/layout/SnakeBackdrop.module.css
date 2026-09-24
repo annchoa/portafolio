@@ -1,0 +1,17 @@
+.backdrop {
+  position: relative;
+}
+
+.snake {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50%;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  z-index: 0;
+  opacity: var(--snake-opacity);
+  pointer-events: none;
+  user-select: none;
+}

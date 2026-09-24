@@ -1,45 +1,29 @@
-/* =============================================================================
-   THEME — capa 2: variables semánticas. ESTE ES EL FICHERO QUE SE TOCA.
-   Cambiando los valores de aquí cambia la web entera, sin abrir un componente.
-   Todo apunta a los tokens de tokens.css; puedes apuntar a otro color y listo.
-   ========================================================================== */
-:root {
-  /* ---------------------------------------------------------------------
-     COLORES
-     ------------------------------------------------------------------ */
+*:root {
   --primary-color: var(--pink-500);
   --secondary-color: var(--magenta-500);
   --tertiary-color: var(--orange-500);
   --accent-color: var(--green-500);
 
-  /* Fondos y superficies */
   --background-color: var(--navy-900);
   --surface-color: var(--white);
   --chip-color: var(--ink-900);
 
-  /* Texto */
   --text-color: var(--off-white);
   --text-color-strong: var(--white);
   --text-color-muted: var(--gray-300);
   --text-color-link: var(--gray-200);
   --text-color-link-hover: var(--white);
 
-  /* Líneas e ilustración */
   --line-color: var(--off-white);
   --illustration-color: var(--white);
 
-  /* Color por sección (cada heading de display lleva el suyo) */
   --projects-color: var(--pink-600);
   --experience-color: var(--magenta-500);
   --community-color: var(--orange-500);
   --contact-color: var(--white);
   --stat-color: var(--green-500);
 
-  /* ---------------------------------------------------------------------
-     TIPOGRAFÍA — title / subtitle / body / label
-     ------------------------------------------------------------------ */
 
-  /* Título de display gigante (PROJECTS, EXPERIENCE...) */
   --title-font: var(--font-family-display);
   --title-size: clamp(4rem, 13.9vw, 200px);
   --title-weight: var(--weight-regular);
@@ -47,46 +31,41 @@
   --title-letter-spacing: -0.005em;
   --title-color: var(--primary-color);
 
-  /* Título de display secundario (COMMUNITY & RECOGNITION) */
+  /* (COMMUNITY & RECOGNITION) */
   --title-alt-size: clamp(3.5rem, 12.5vw, 180px);
 
-  /* Título medio (contact me) */
+  /* (contact me) */
   --heading-font: var(--font-family-display);
   --heading-size: clamp(2.5rem, 4.4vw, 64px);
   --heading-weight: var(--weight-regular);
   --heading-line-height: var(--leading-tight);
   --heading-color: var(--text-color-strong);
 
-  /* Subtítulo (nombre, rol, etiquetas de proyecto) */
   --subtitle-font: var(--font-family-body);
   --subtitle-size: clamp(1.75rem, 2.8vw, 40px);
   --subtitle-weight: var(--weight-regular);
   --subtitle-line-height: var(--leading-tight);
   --subtitle-color: var(--text-color);
 
-  /* Etiqueta de proyecto / enlaces (Bebas pequeño) */
   --label-font: var(--font-family-display);
   --label-size: clamp(1.5rem, 2.2vw, 32px);
   --label-weight: var(--weight-regular);
   --label-color: var(--text-color-link);
 
-  /* Cuerpo de texto */
   --body-font: var(--font-family-body);
   --body-size: clamp(1rem, 1.7vw, 24px);
   --body-weight: var(--weight-regular);
   --body-line-height: var(--leading-body);
   --body-color: var(--text-color);
 
-  /* Iconos de contacto */
   --contact-icon-size: 0.9em;
   --contact-icon-gap: 0.5em;
 
-  /* UI (pills de idioma) */
   --ui-font: var(--font-family-ui);
   --ui-size: 16px;
   --ui-weight: var(--weight-regular);
 
-  /* Dato numérico del footer */
+  /*footer */
   --stat-label-font: var(--font-family-body);
   --stat-label-size: clamp(1.5rem, 2.8vw, 40px);
   --stat-label-weight: var(--weight-extrabold);
@@ -103,12 +82,14 @@
   --block-spacing: clamp(32px, 5.1vw, 74px);
   --stack-spacing: var(--space-3);
 
+  --snake-opacity: 1;
+
   --card-radius: var(--radius-block);
   --pill-radius: var(--radius-pill);
   --chip-radius: var(--radius-chip);
 
   /* ---------------------------------------------------------------------
-     MOVIMIENTO — el sistema sólo implica una transición corta de color
+     color transition
      ------------------------------------------------------------------ */
   --transition-fast: 120ms linear;
 }
